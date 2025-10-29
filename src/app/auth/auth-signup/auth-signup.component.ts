@@ -4,9 +4,10 @@ import {Router} from "@angular/router"
 import {NotificationService} from "carbon-components-angular"
 
 @Component({
-  selector: 'app-auth-signup',
-  templateUrl: './auth-signup.component.html',
-  styleUrls: ['./auth-signup.component.scss']
+    selector: 'app-auth-signup',
+    templateUrl: './auth-signup.component.html',
+    styleUrls: ['./auth-signup.component.scss'],
+    standalone: false
 })
 export class AuthSignupComponent implements OnInit {
 

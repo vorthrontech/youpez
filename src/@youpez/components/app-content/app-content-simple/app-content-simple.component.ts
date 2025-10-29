@@ -1,9 +1,10 @@
 import {Component, OnInit, Input} from '@angular/core'
 
 @Component({
-  selector: 'youpez-content-simple',
-  templateUrl: './app-content-simple.component.html',
-  styleUrls: ['./app-content-simple.component.scss']
+    selector: 'youpez-content-simple',
+    templateUrl: './app-content-simple.component.html',
+    styleUrls: ['./app-content-simple.component.scss'],
+    standalone: false
 })
 export class AppContentSimpleComponent implements OnInit {
 

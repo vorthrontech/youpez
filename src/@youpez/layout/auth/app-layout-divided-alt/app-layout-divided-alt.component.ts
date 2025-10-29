@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-app-layout-divided-alt',
-  templateUrl: './app-layout-divided-alt.component.html',
-  styleUrls: ['./app-layout-divided-alt.component.scss']
+    selector: 'app-app-layout-divided-alt',
+    templateUrl: './app-layout-divided-alt.component.html',
+    styleUrls: ['./app-layout-divided-alt.component.scss'],
+    standalone: false
 })
 export class AppLayoutDividedAltComponent implements OnInit {
 

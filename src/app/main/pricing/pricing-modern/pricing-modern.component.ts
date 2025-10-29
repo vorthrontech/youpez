@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core'
 
 @Component({
-  selector: 'app-pricing-modern',
-  templateUrl: './pricing-modern.component.html',
-  styleUrls: ['./pricing-modern.component.scss']
+    selector: 'app-pricing-modern',
+    templateUrl: './pricing-modern.component.html',
+    styleUrls: ['./pricing-modern.component.scss'],
+    standalone: false
 })
 export class PricingModernComponent implements OnInit {
 

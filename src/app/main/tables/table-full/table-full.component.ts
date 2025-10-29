@@ -91,9 +91,10 @@ const parseCSV = (csv) => {
 }
 
 @Component({
-  selector: 'app-table-full',
-  templateUrl: './table-full.component.html',
-  styleUrls: ['./table-full.component.css']
+    selector: 'app-table-full',
+    templateUrl: './table-full.component.html',
+    styleUrls: ['./table-full.component.css'],
+    standalone: false
 })
 export class TableFullComponent implements OnInit {
 

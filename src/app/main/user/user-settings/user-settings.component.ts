@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core'
 
 @Component({
-  selector: 'app-settings',
-  templateUrl: './user-settings.component.html',
-  styleUrls: ['./user-settings.component.scss']
+    selector: 'app-settings',
+    templateUrl: './user-settings.component.html',
+    styleUrls: ['./user-settings.component.scss'],
+    standalone: false
 })
 export class UserSettingsComponent implements OnInit {
   constructor() {

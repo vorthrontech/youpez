@@ -13,9 +13,10 @@ const getSizeFrom = (name) => {
 
 
 @Component({
-  selector: 'app-table-basic',
-  templateUrl: './table-basic.component.html',
-  styleUrls: ['./table-basic.component.css']
+    selector: 'app-table-basic',
+    templateUrl: './table-basic.component.html',
+    styleUrls: ['./table-basic.component.css'],
+    standalone: false
 })
 export class TableBasicComponent implements OnInit {
 

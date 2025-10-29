@@ -2,9 +2,10 @@ import {Component, OnInit} from '@angular/core'
 import {DomSanitizer} from '@angular/platform-browser'
 
 @Component({
-  selector: 'app-getting-started',
-  templateUrl: './getting-started.component.html',
-  styleUrls: ['./getting-started.component.css']
+    selector: 'app-getting-started',
+    templateUrl: './getting-started.component.html',
+    styleUrls: ['./getting-started.component.css'],
+    standalone: false
 })
 export class GettingStartedComponent implements OnInit {
 

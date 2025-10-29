@@ -10,9 +10,10 @@ import {EchartsComponent} from "../echarts/echarts.component"
 import {Subscription} from "rxjs"
 
 @Component({
-  selector: 'youpez-echarts-container',
-  templateUrl: './echarts-container.component.html',
-  styleUrls: ['./echarts-container.component.scss']
+    selector: 'youpez-echarts-container',
+    templateUrl: './echarts-container.component.html',
+    styleUrls: ['./echarts-container.component.scss'],
+    standalone: false
 })
 export class EchartsContainerComponent implements OnInit, OnDestroy {
 

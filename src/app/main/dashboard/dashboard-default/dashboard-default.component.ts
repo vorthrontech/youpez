@@ -4,9 +4,10 @@ import * as echarts from 'echarts'
 import {getDummyModel} from "../../../../@youpez/data/dummy"
 
 @Component({
-  selector: 'app-dashboard-default',
-  templateUrl: './dashboard-default.component.html',
-  styleUrls: ['./dashboard-default.component.scss']
+    selector: 'app-dashboard-default',
+    templateUrl: './dashboard-default.component.html',
+    styleUrls: ['./dashboard-default.component.scss'],
+    standalone: false
 })
 export class DashboardDefaultComponent implements OnInit {
 

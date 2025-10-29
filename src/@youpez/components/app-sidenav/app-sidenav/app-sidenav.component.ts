@@ -31,9 +31,10 @@ export declare type SizeType =
   | 'mini'
 
 @Component({
-  selector: 'youpez-sidenav',
-  templateUrl: './app-sidenav.component.html',
-  styleUrls: ['./app-sidenav.component.scss'],
+    selector: 'youpez-sidenav',
+    templateUrl: './app-sidenav.component.html',
+    styleUrls: ['./app-sidenav.component.scss'],
+    standalone: false
 })
 export class AppSidenavComponent implements OnInit, OnDestroy, AfterContentInit, OnChanges, AfterViewInit, AfterViewChecked {
 

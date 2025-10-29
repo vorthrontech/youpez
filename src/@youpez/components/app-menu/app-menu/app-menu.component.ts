@@ -2,9 +2,10 @@ import {Component, OnInit, Input, ViewChildren, QueryList, ElementRef, Output, E
 import {AppMenuItemComponent} from '../app-menu-item/app-menu-item.component'
 
 @Component({
-  selector: 'youpez-menu',
-  templateUrl: './app-menu.component.html',
-  styleUrls: ['./app-menu.component.css']
+    selector: 'youpez-menu',
+    templateUrl: './app-menu.component.html',
+    styleUrls: ['./app-menu.component.css'],
+    standalone: false
 })
 export class AppMenuComponent implements OnInit {
 

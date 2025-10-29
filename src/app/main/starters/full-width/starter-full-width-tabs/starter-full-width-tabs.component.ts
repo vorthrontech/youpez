@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {AppTab} from "../../../../../@youpez"
 
 @Component({
-  selector: 'app-starter-full-width-tabs',
-  templateUrl: './starter-full-width-tabs.component.html',
-  styleUrls: ['./starter-full-width-tabs.component.scss']
+    selector: 'app-starter-full-width-tabs',
+    templateUrl: './starter-full-width-tabs.component.html',
+    styleUrls: ['./starter-full-width-tabs.component.scss'],
+    standalone: false
 })
 export class StarterFullWidthTabsComponent implements OnInit {
 

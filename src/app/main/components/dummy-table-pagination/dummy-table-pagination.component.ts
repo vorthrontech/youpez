@@ -3,9 +3,10 @@ import {TableModel, TableHeaderItem, TableItem} from "carbon-components-angular"
 import {getDummyData} from "../../../../@youpez/data/dummy"
 
 @Component({
-  selector: 'app-dummy-table-pagination',
-  templateUrl: './dummy-table-pagination.component.html',
-  styleUrls: ['./dummy-table-pagination.component.scss']
+    selector: 'app-dummy-table-pagination',
+    templateUrl: './dummy-table-pagination.component.html',
+    styleUrls: ['./dummy-table-pagination.component.scss'],
+    standalone: false
 })
 export class DummyTablePaginationComponent implements OnInit {
 

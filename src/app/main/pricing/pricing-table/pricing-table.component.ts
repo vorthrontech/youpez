@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core'
 
 @Component({
-  selector: 'app-pricing-table',
-  templateUrl: './pricing-table.component.html',
-  styleUrls: ['./pricing-table.component.scss']
+    selector: 'app-pricing-table',
+    templateUrl: './pricing-table.component.html',
+    styleUrls: ['./pricing-table.component.scss'],
+    standalone: false
 })
 export class PricingTableComponent implements OnInit {
 

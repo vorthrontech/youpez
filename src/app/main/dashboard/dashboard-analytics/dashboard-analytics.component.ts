@@ -21,9 +21,10 @@ const getDaysArray = function (s, e) {
 }
 
 @Component({
-  selector: 'app-dashboard-analytics',
-  templateUrl: './dashboard-analytics.component.html',
-  styleUrls: ['./dashboard-analytics.component.scss']
+    selector: 'app-dashboard-analytics',
+    templateUrl: './dashboard-analytics.component.html',
+    styleUrls: ['./dashboard-analytics.component.scss'],
+    standalone: false
 })
 export class DashboardAnalyticsComponent implements OnInit {
 

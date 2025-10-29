@@ -2,9 +2,10 @@ import {Component, OnInit} from '@angular/core'
 import {MailService} from "../mail.service"
 
 @Component({
-  selector: 'app-mail',
-  templateUrl: './mail.component.html',
-  styleUrls: ['./mail.component.scss']
+    selector: 'app-mail',
+    templateUrl: './mail.component.html',
+    styleUrls: ['./mail.component.scss'],
+    standalone: false
 })
 export class MailComponent implements OnInit {
 

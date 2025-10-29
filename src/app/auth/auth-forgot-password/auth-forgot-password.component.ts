@@ -4,9 +4,10 @@ import {Router} from "@angular/router"
 import {NotificationService} from "carbon-components-angular"
 
 @Component({
-  selector: 'app-auth-forgot-password',
-  templateUrl: './auth-forgot-password.component.html',
-  styleUrls: ['./auth-forgot-password.component.scss']
+    selector: 'app-auth-forgot-password',
+    templateUrl: './auth-forgot-password.component.html',
+    styleUrls: ['./auth-forgot-password.component.scss'],
+    standalone: false
 })
 export class AuthForgotPasswordComponent implements OnInit {
 

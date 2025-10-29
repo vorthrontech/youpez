@@ -29,9 +29,10 @@ function sort(model, index: number) {
 }
 
 @Component({
-  selector: 'app-dummy-table-rich',
-  templateUrl: './dummy-table-rich.component.html',
-  styleUrls: ['./dummy-table-rich.component.scss']
+    selector: 'app-dummy-table-rich',
+    templateUrl: './dummy-table-rich.component.html',
+    styleUrls: ['./dummy-table-rich.component.scss'],
+    standalone: false
 })
 export class DummyTableRichComponent implements OnInit {
 

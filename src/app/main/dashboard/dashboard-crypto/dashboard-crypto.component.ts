@@ -97,9 +97,10 @@ const rateClassRendererAlt = (params, additional) => {
 }
 
 @Component({
-  selector: 'app-dashboard-crypto',
-  templateUrl: './dashboard-crypto.component.html',
-  styleUrls: ['./dashboard-crypto.component.scss']
+    selector: 'app-dashboard-crypto',
+    templateUrl: './dashboard-crypto.component.html',
+    styleUrls: ['./dashboard-crypto.component.scss'],
+    standalone: false
 })
 export class DashboardCryptoComponent implements OnInit {
 

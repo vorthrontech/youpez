@@ -34,9 +34,10 @@ function isChanged(param) {
 }
 
 @Component({
-  selector: 'youpez-echarts',
-  templateUrl: './echarts.component.html',
-  styleUrls: ['./echarts.component.scss']
+    selector: 'youpez-echarts',
+    templateUrl: './echarts.component.html',
+    styleUrls: ['./echarts.component.scss'],
+    standalone: false
 })
 export class EchartsComponent implements OnInit, OnDestroy, OnChanges, DoCheck, AfterViewInit {
 

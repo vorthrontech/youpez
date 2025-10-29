@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {AppTab} from "../../../../@youpez"
 
 @Component({
-  selector: 'app-user-layout',
-  templateUrl: './user-layout.component.html',
-  styleUrls: ['./user-layout.component.scss']
+    selector: 'app-user-layout',
+    templateUrl: './user-layout.component.html',
+    styleUrls: ['./user-layout.component.scss'],
+    standalone: false
 })
 export class UserLayoutComponent implements OnInit {
 

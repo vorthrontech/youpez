@@ -10,9 +10,10 @@ import {
 } from '@angular/core'
 
 @Component({
-  selector: 'youpez-search',
-  templateUrl: './app-search.component.html',
-  styleUrls: ['./app-search.component.scss']
+    selector: 'youpez-search',
+    templateUrl: './app-search.component.html',
+    styleUrls: ['./app-search.component.scss'],
+    standalone: false
 })
 export class AppSearchComponent implements OnInit, AfterViewInit {
 

@@ -2,9 +2,10 @@ import {Component, OnInit} from '@angular/core'
 import {getDummyModel} from "../../../../@youpez/data/dummy"
 
 @Component({
-  selector: 'app-dummy-table-advanced',
-  templateUrl: './dummy-table-advanced.component.html',
-  styleUrls: ['./dummy-table-advanced.component.scss']
+    selector: 'app-dummy-table-advanced',
+    templateUrl: './dummy-table-advanced.component.html',
+    styleUrls: ['./dummy-table-advanced.component.scss'],
+    standalone: false
 })
 export class DummyTableAdvancedComponent implements OnInit {
 

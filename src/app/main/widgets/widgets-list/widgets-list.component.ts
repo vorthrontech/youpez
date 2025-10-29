@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core'
 
 @Component({
-  selector: 'app-widgets-list',
-  templateUrl: './widgets-list.component.html',
-  styleUrls: ['./widgets-list.component.css']
+    selector: 'app-widgets-list',
+    templateUrl: './widgets-list.component.html',
+    styleUrls: ['./widgets-list.component.css'],
+    standalone: false
 })
 export class WidgetsListComponent implements OnInit {
 

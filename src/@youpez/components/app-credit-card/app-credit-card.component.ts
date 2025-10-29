@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'youpez-credit-card',
-  templateUrl: './app-credit-card.component.html',
-  styleUrls: ['./app-credit-card.component.scss']
+    selector: 'youpez-credit-card',
+    templateUrl: './app-credit-card.component.html',
+    styleUrls: ['./app-credit-card.component.scss'],
+    standalone: false
 })
 export class AppCreditCardComponent implements OnInit {
 

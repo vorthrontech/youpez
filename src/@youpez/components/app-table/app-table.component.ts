@@ -8,9 +8,10 @@ import {
 
 
 @Component({
-  selector: 'app-table',
-  templateUrl: './app-table.component.html',
-  styleUrls: ['./app-table.component.scss']
+    selector: 'app-table',
+    templateUrl: './app-table.component.html',
+    styleUrls: ['./app-table.component.scss'],
+    standalone: false
 })
 export class AppTableComponent implements OnInit, OnChanges {
   constructor() {

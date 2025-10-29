@@ -13,9 +13,10 @@ export function getUniqueId(parts: number): string {
 }
 
 @Component({
-  selector: 'youpez-tasks-list',
-  templateUrl: './app-tasks.component.html',
-  styleUrls: ['./app-tasks.component.scss']
+    selector: 'youpez-tasks-list',
+    templateUrl: './app-tasks.component.html',
+    styleUrls: ['./app-tasks.component.scss'],
+    standalone: false
 })
 export class AppTasksComponent implements OnInit {
 

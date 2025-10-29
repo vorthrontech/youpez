@@ -6,9 +6,10 @@ import {appThemes, sideBarThemes, headerThemes} from "@youpez/helpers"
 import set = Reflect.set
 
 @Component({
-  selector: 'youpez-theme-settings',
-  templateUrl: './app-theme-settings.component.html',
-  styleUrls: ['./app-theme-settings.component.scss']
+    selector: 'youpez-theme-settings',
+    templateUrl: './app-theme-settings.component.html',
+    styleUrls: ['./app-theme-settings.component.scss'],
+    standalone: false
 })
 export class AppThemeSettingsComponent implements OnInit, OnDestroy {
 

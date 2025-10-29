@@ -1,9 +1,10 @@
 import {Component, OnInit, Input} from '@angular/core'
 
 @Component({
-  selector: 'app-layout-divided',
-  templateUrl: './app-layout-divided.component.html',
-  styleUrls: ['./app-layout-divided.component.scss']
+    selector: 'app-layout-divided',
+    templateUrl: './app-layout-divided.component.html',
+    styleUrls: ['./app-layout-divided.component.scss'],
+    standalone: false
 })
 export class AppLayoutDividedComponent implements OnInit {
 

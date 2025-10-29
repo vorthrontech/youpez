@@ -13,9 +13,10 @@ import {Router, Routes} from '@angular/router'
 import {AppMenuService} from "../../../services/app-menu.service"
 
 @Component({
-  selector: 'app-menu-item',
-  templateUrl: './app-menu-item.component.html',
-  styleUrls: ['./app-menu-item.component.css']
+    selector: 'app-menu-item',
+    templateUrl: './app-menu-item.component.html',
+    styleUrls: ['./app-menu-item.component.css'],
+    standalone: false
 })
 export class AppMenuItemComponent implements OnInit {
 

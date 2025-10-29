@@ -3,9 +3,10 @@ import {NgScrollbar} from "ngx-scrollbar"
 import {MenuType} from "../../../../@youpez"
 
 @Component({
-  selector: 'app-layout-sidebar',
-  templateUrl: './layout-sidebar.component.html',
-  styleUrls: ['./layout-sidebar.component.scss']
+    selector: 'app-layout-sidebar',
+    templateUrl: './layout-sidebar.component.html',
+    styleUrls: ['./layout-sidebar.component.scss'],
+    standalone: false
 })
 export class LayoutSidebarComponent implements OnInit, AfterViewInit {
 

@@ -2,9 +2,10 @@ import {Component, OnInit} from '@angular/core'
 import {MatDialogRef} from "@angular/material/dialog"
 
 @Component({
-  selector: 'app-mail-compose',
-  templateUrl: './mail-compose.component.html',
-  styleUrls: ['./mail-compose.component.scss']
+    selector: 'app-mail-compose',
+    templateUrl: './mail-compose.component.html',
+    styleUrls: ['./mail-compose.component.scss'],
+    standalone: false
 })
 export class MailComposeComponent implements OnInit {
 

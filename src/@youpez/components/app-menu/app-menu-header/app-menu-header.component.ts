@@ -1,9 +1,10 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core'
 
 @Component({
-  selector: 'youpez-menu-header',
-  templateUrl: './app-menu-header.component.html',
-  styleUrls: ['./app-menu-header.component.css']
+    selector: 'youpez-menu-header',
+    templateUrl: './app-menu-header.component.html',
+    styleUrls: ['./app-menu-header.component.css'],
+    standalone: false
 })
 export class AppMenuHeaderComponent implements OnInit {
 

@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core'
 
 @Component({
-  selector: 'app-auth-confirmation',
-  templateUrl: './auth-confirmation.component.html',
-  styleUrls: ['./auth-confirmation.component.scss']
+    selector: 'app-auth-confirmation',
+    templateUrl: './auth-confirmation.component.html',
+    styleUrls: ['./auth-confirmation.component.scss'],
+    standalone: false
 })
 export class AuthConfirmationComponent implements OnInit {
 

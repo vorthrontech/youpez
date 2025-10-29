@@ -3,9 +3,10 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 import {ScrumFormService} from "../scrum-form.service"
 
 @Component({
-  selector: 'app-scrum-board',
-  templateUrl: './scrum-board.component.html',
-  styleUrls: ['./scrum-board.component.scss']
+    selector: 'app-scrum-board',
+    templateUrl: './scrum-board.component.html',
+    styleUrls: ['./scrum-board.component.scss'],
+    standalone: false
 })
 export class ScrumBoardComponent implements OnInit {
 

@@ -1,7 +1,8 @@
 import {Pipe, PipeTransform} from '@angular/core'
 
 @Pipe({
-  name: 'inputTypeAdvanced',
+    name: 'inputTypeAdvanced',
+    standalone: false
 })
 export class InputTypeAdvancedPipe implements PipeTransform {
 

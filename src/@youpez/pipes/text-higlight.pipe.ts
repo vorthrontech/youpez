@@ -3,7 +3,8 @@ import {DomSanitizer} from '@angular/platform-browser'
 import * as _ from 'lodash'
 
 @Pipe({
-  name: 'textHighlight',
+    name: 'textHighlight',
+    standalone: false
 })
 export class TextHiglightPipe implements PipeTransform {
 

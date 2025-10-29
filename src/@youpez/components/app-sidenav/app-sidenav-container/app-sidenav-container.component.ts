@@ -15,9 +15,10 @@ import {WindowRefService} from "../../../services/window-ref.service"
 export declare type PanelType = '' | 'panel' | 'solid'
 
 @Component({
-  selector: 'youpez-sidenav-container',
-  templateUrl: './app-sidenav-container.component.html',
-  styleUrls: ['./app-sidenav-container.component.scss'],
+    selector: 'youpez-sidenav-container',
+    templateUrl: './app-sidenav-container.component.html',
+    styleUrls: ['./app-sidenav-container.component.scss'],
+    standalone: false
 })
 export class AppSidenavContainerComponent implements OnInit, OnDestroy, AfterContentInit, AfterViewChecked {
 

@@ -4,9 +4,10 @@ import {Router} from "@angular/router"
 import {NotificationService} from "carbon-components-angular"
 
 @Component({
-  selector: 'app-auth-reset-password',
-  templateUrl: './auth-reset-password.component.html',
-  styleUrls: ['./auth-reset-password.component.scss']
+    selector: 'app-auth-reset-password',
+    templateUrl: './auth-reset-password.component.html',
+    styleUrls: ['./auth-reset-password.component.scss'],
+    standalone: false
 })
 export class AuthResetPasswordComponent implements OnInit {
 

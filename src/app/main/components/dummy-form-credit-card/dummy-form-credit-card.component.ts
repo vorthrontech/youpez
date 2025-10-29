@@ -3,9 +3,10 @@ import {UntypedFormBuilder, UntypedFormGroup, Validators} from "@angular/forms"
 import {isFormItemValid} from "../../../../@youpez"
 
 @Component({
-  selector: 'app-dummy-form-credit-card',
-  templateUrl: './dummy-form-credit-card.component.html',
-  styleUrls: ['./dummy-form-credit-card.component.scss']
+    selector: 'app-dummy-form-credit-card',
+    templateUrl: './dummy-form-credit-card.component.html',
+    styleUrls: ['./dummy-form-credit-card.component.scss'],
+    standalone: false
 })
 export class DummyFormCreditCardComponent implements OnInit {
 

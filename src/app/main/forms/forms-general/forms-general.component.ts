@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-forms-general',
-  templateUrl: './forms-general.component.html',
-  styleUrls: ['./forms-general.component.css']
+    selector: 'app-forms-general',
+    templateUrl: './forms-general.component.html',
+    styleUrls: ['./forms-general.component.css'],
+    standalone: false
 })
 export class FormsGeneralComponent implements OnInit {
 

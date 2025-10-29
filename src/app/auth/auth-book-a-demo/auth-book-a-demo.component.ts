@@ -8,9 +8,10 @@ import {passwordRegex, passwordCheckerHelper, isFormItemValid, numberRegex,} fro
 import {countriesData,usStatesData} from "../../../@youpez/data/dummy"
 
 @Component({
-  selector: 'app-auth-book-a-demo',
-  templateUrl: './auth-book-a-demo.component.html',
-  styleUrls: ['./auth-book-a-demo.component.scss']
+    selector: 'app-auth-book-a-demo',
+    templateUrl: './auth-book-a-demo.component.html',
+    styleUrls: ['./auth-book-a-demo.component.scss'],
+    standalone: false
 })
 export class AuthBookADemoComponent implements OnInit {
 

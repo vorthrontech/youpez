@@ -8,9 +8,10 @@ export interface IBreadCrumb {
 }
 
 @Component({
-  selector: 'youpez-breadcrumb',
-  templateUrl: './app-breadcrumb.component.html',
-  styleUrls: ['./app-breadcrumb.component.scss']
+    selector: 'youpez-breadcrumb',
+    templateUrl: './app-breadcrumb.component.html',
+    styleUrls: ['./app-breadcrumb.component.scss'],
+    standalone: false
 })
 export class AppBreadcrumbComponent implements OnInit {
 

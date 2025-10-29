@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'youpez-auth-welcome-screen',
-  templateUrl: './auth-welcome-screen.component.html',
-  styleUrls: ['./auth-welcome-screen.component.scss']
+    selector: 'youpez-auth-welcome-screen',
+    templateUrl: './auth-welcome-screen.component.html',
+    styleUrls: ['./auth-welcome-screen.component.scss'],
+    standalone: false
 })
 export class AuthWelcomeScreenComponent implements OnInit {
 

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-starter-full-width-header',
-  templateUrl: './starter-full-width-header.component.html',
-  styleUrls: ['./starter-full-width-header.component.scss']
+    selector: 'app-starter-full-width-header',
+    templateUrl: './starter-full-width-header.component.html',
+    styleUrls: ['./starter-full-width-header.component.scss'],
+    standalone: false
 })
 export class StarterFullWidthHeaderComponent implements OnInit {
 

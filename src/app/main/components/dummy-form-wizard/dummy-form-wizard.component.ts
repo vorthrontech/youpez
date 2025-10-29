@@ -1,9 +1,10 @@
 import {Component, OnInit, Input} from '@angular/core'
 
 @Component({
-  selector: 'app-dummy-form-wizard',
-  templateUrl: './dummy-form-wizard.component.html',
-  styleUrls: ['./dummy-form-wizard.component.scss']
+    selector: 'app-dummy-form-wizard',
+    templateUrl: './dummy-form-wizard.component.html',
+    styleUrls: ['./dummy-form-wizard.component.scss'],
+    standalone: false
 })
 export class DummyFormWizardComponent implements OnInit {
 

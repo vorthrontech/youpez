@@ -21,9 +21,10 @@ class CustomHeaderItem extends TableHeaderItem {
 }
 
 @Component({
-  selector: 'app-dummy-table-expansion',
-  templateUrl: './dummy-table-expansion.component.html',
-  styleUrls: ['./dummy-table-expansion.component.scss']
+    selector: 'app-dummy-table-expansion',
+    templateUrl: './dummy-table-expansion.component.html',
+    styleUrls: ['./dummy-table-expansion.component.scss'],
+    standalone: false
 })
 export class DummyTableExpansionComponent implements OnInit {
   @Input() model = new TableModel()

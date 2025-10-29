@@ -4,9 +4,10 @@ import {isFormItemValid} from "../../../../@youpez"
 import {countriesData, usStatesData} from "../../../../@youpez/data/dummy"
 
 @Component({
-  selector: 'app-dummy-form-billing',
-  templateUrl: './dummy-form-billing.component.html',
-  styleUrls: ['./dummy-form-billing.component.scss']
+    selector: 'app-dummy-form-billing',
+    templateUrl: './dummy-form-billing.component.html',
+    styleUrls: ['./dummy-form-billing.component.scss'],
+    standalone: false
 })
 export class DummyFormBillingComponent implements OnInit {
 

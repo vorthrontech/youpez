@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core'
 
 @Component({
-  selector: 'app-forms-advanced',
-  templateUrl: './forms-advanced.component.html',
-  styleUrls: ['./forms-advanced.component.css']
+    selector: 'app-forms-advanced',
+    templateUrl: './forms-advanced.component.html',
+    styleUrls: ['./forms-advanced.component.css'],
+    standalone: false
 })
 export class FormsAdvancedComponent implements OnInit {
 

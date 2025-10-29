@@ -6,12 +6,13 @@ import {SettingsService} from "../../../@youpez"
 import {AppMenuService} from "../../../@youpez"
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss'],
-  animations: [
-    defaultRouterTransition,
-  ],
+    selector: 'app-layout',
+    templateUrl: './layout.component.html',
+    styleUrls: ['./layout.component.scss'],
+    animations: [
+        defaultRouterTransition,
+    ],
+    standalone: false
 })
 export class LayoutComponent implements OnInit, OnDestroy {
   private readonly onDestroy = new Subject<void>()

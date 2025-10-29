@@ -6,9 +6,10 @@ import {Router} from "@angular/router"
 export declare type TabType = 'navigation' | 'sm'
 
 @Component({
-  selector: 'youpez-content-tabs',
-  templateUrl: './app-content-tabs.component.html',
-  styleUrls: ['./app-content-tabs.component.scss']
+    selector: 'youpez-content-tabs',
+    templateUrl: './app-content-tabs.component.html',
+    styleUrls: ['./app-content-tabs.component.scss'],
+    standalone: false
 })
 export class AppContentTabsComponent implements OnInit {
 
