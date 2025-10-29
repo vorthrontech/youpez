@@ -141,8 +141,9 @@
       }
     }
   },
-  "defaultProject": "theme",
   "cli": {
-    "defaultCollection": "@ngrx/schematics"
+    "schematicCollections": [
+      "@ngrx/schematics"
+    ]
   }
 }
