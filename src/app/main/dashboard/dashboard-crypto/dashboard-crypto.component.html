@@ -141,33 +141,33 @@
           <div class="app-a-box app-bg-container app-scrollbar-fix">
             <ng-scrollbar>
               <div class="app-list app-list--hover app-list--select app-list--condensed">
-                <ng-container *ngFor="let watch of watchList">
+                @for (watch of watchList; track watch) {
                   <div class="app-list__item" (click)="onSelect(watch[0])"
-                       [ngClass]="{'app-list__item--active':selectedWatch === watch[0]}">
+                    [ngClass]="{'app-list__item--active':selectedWatch === watch[0]}">
                     <div class="app-list__item__content">
                       <div fxFlex fxLayout="row" fxLayoutAlign="center center">
                         <div fxFlex="40" class="app-expressive-heading-01">{{watch[0]}}</div>
                         <div fxFlex="25" class="app-helper-text-01 text-right">{{watch[1]}}</div>
-                        <ng-container *ngIf="watch[2] < 0">
+                        @if (watch[2] < 0) {
                           <div fxFlex="35" class="app-helper-text-01 text-right app-color-danger">
                             <div class="flex justify-end items-center">
                               {{watch[2]}}
                               <youpez-ibm-icon iconName="arrowDown" iconSize="16" class="-mr-2 ml-1"></youpez-ibm-icon>
                             </div>
                           </div>
-                        </ng-container>
-                        <ng-container *ngIf="watch[2] >= 0">
+                        }
+                        @if (watch[2] >= 0) {
                           <div fxFlex="35" class="app-helper-text-01 text-right app-color-success">
                             <div class="flex justify-end items-center">
                               {{watch[2]}}
                               <youpez-ibm-icon iconName="arrowUp" iconSize="16" class="-mr-2 ml-1"></youpez-ibm-icon>
                             </div>
                           </div>
-                        </ng-container>
+                        }
                       </div>
                     </div>
                   </div>
-                </ng-container>
+                }
               </div>
             </ng-scrollbar>
           </div>
@@ -234,7 +234,7 @@
             type="blue"
             title="Filter"
             closeButtonLabel="Clear"
-          >Fortune 500
+            >Fortune 500
           </ibm-tag-filter>
 
           <div class="flex flex-1 justify-end">
@@ -251,13 +251,13 @@
         </div>
 
         <div fxFlex fxFill class="relative">
-          <ng-container *ngIf="!loading">
+          @if (!loading) {
             <ag-grid-angular
               class="app-ag-grid app-ag-grid--border-t"
               [modules]="modules"
               [gridOptions]="gridOptions">
             </ag-grid-angular>
-          </ng-container>
+          }
         </div>
       </div>
     </youpez-sidenav>

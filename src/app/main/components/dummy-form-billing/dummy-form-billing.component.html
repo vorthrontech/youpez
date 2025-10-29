@@ -121,9 +121,9 @@
           <a class="app-link">terms & conditions</a>
         </ibm-checkbox>
       </div>
-      <ng-container *ngIf="isValid('condition')">
+      @if (isValid('condition')) {
         <div class="app-helper-text-01 app-color-danger">This field is required</div>
-      </ng-container>
+      }
     </div>
   </div>
 </form>

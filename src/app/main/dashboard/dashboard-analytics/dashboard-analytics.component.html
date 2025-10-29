@@ -22,7 +22,7 @@
               </div>
             </div>
             <div class="app-content app-content--sm ">
-              <ng-container *ngFor="let user of users">
+              @for (user of users; track user) {
                 <div class="app-row app-row-center truncate mb-2 relative">
                   <div class="app-symbol mr-2">
                     <div class="app-symbol__label w-8 h-8 rounded-full app-bg-info-lt-50 app-text-contrast">
@@ -39,7 +39,7 @@
                     </button>
                   </div>
                 </div>
-              </ng-container>
+              }
             </div>
             <div class="app-header app-header--sm">
               <div class="app-expressive-heading-02">Conversions log</div>
@@ -51,11 +51,11 @@
               </div>
             </div>
             <div class="app-content app-content--sm ">
-              <ng-container *ngFor="let log of logs">
+              @for (log of logs; track log) {
                 <div class="app-code-01 truncate">
                   [{{log.date}}]::{{log.name}}::{{log.country}}
                 </div>
-              </ng-container>
+              }
             </div>
           </ng-scrollbar>
         </div>
@@ -111,14 +111,14 @@
 
             <div fxLayout="row wrap">
               <div fxFlex="100%" fxFlex.gt-lg="75%">
-                <ng-container *ngIf="!loading">
+                @if (!loading) {
                   <div class="app-card__content">
                     <youpez-echarts-container>
                       <youpez-echarts [options]="mainChartOpts" class="app-echarts-component"
-                                   style="height: 400px;"></youpez-echarts>
+                      style="height: 400px;"></youpez-echarts>
                     </youpez-echarts-container>
                   </div>
-                </ng-container>
+                }
               </div>
               <div fxFlex="100%" fxFlex.gt-lg="25%">
                 <div class="app-card__content">
@@ -276,7 +276,7 @@
             <div class="">
               <youpez-echarts-container>
                 <youpez-echarts [options]="miniChart1" class="app-echarts-component"
-                             style="height: 160px;"></youpez-echarts>
+                style="height: 160px;"></youpez-echarts>
               </youpez-echarts-container>
             </div>
             <div class="app-list">
@@ -345,7 +345,7 @@
             <div class="">
               <youpez-echarts-container>
                 <youpez-echarts [options]="miniChart2" class="app-echarts-component"
-                             style="height: 160px;"></youpez-echarts>
+                style="height: 160px;"></youpez-echarts>
               </youpez-echarts-container>
             </div>
             <div class="app-list">
@@ -432,7 +432,7 @@
             <div class="app-card__content">
               <youpez-echarts-container>
                 <youpez-echarts [options]="miniChart3" class="app-echarts-component"
-                             style="height: 300px;"></youpez-echarts>
+                style="height: 300px;"></youpez-echarts>
               </youpez-echarts-container>
             </div>
           </div>

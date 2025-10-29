@@ -122,15 +122,15 @@
         <div class="app-productive-heading-02 mb-2">ADVANCED EXAMPLE #1</div>
         <div class="app-card mb-6" style="max-width: 300px">
           <div class="app-list app-list--hover app-list--select">
-            <ng-container *ngFor="let sub of subscriptions">
+            @for (sub of subscriptions; track sub) {
               <div class="app-list__item" [ngClass]="{'app-color-success':sub.up,'app-color-danger':!sub.up}">
                 <div class="app-list__item__prefix w-10 text-center">
-                  <ng-container *ngIf="sub.up">
+                  @if (sub.up) {
                     <youpez-ibm-icon iconName="arrowUp" iconSize="16"></youpez-ibm-icon>
-                  </ng-container>
-                  <ng-container *ngIf="!sub.up">
+                  }
+                  @if (!sub.up) {
                     <youpez-ibm-icon iconName="arrowDown" iconSize="16"></youpez-ibm-icon>
-                  </ng-container>
+                  }
                 </div>
                 <div class="app-list__item__content">
                   {{sub.month}}
@@ -140,7 +140,7 @@
                   <svg class="bx--btn__icon" ibmIconArrowRight size="32"></svg>
                 </button>
               </div>
-            </ng-container>
+            }
           </div>
         </div>
 
@@ -208,25 +208,25 @@
         <div class="app-productive-heading-02 mb-2">ADVANCED EXAMPLE #3</div>
         <div class="app-card mb-6 p-1">
           <div class="app-list app-list--hover app-list--select-alt">
-            <ng-container *ngFor="let mail of mails">
-              <ng-container *ngIf="mail.sep">
+            @for (mail of mails; track mail) {
+              @if (mail.sep) {
                 <div class="app-list-header-title">{{mail.sep}}</div>
-              </ng-container>
-              <ng-container *ngIf="!mail.sep">
+              }
+              @if (!mail.sep) {
                 <div (click)="onSelect(mail)" [ngClass]="{'app-list__item--active':mail === selectedMail}"
-                     class="app-list__item app-list__item--align-top">
+                  class="app-list__item app-list__item--align-top">
                   <div class="app-list__item__prefix w-6 text-center">
                     <div style="padding-top:47px">
-                      <ng-container *ngIf="!mail.read">
+                      @if (!mail.read) {
                         <div class="mb-4">
                           <span class="w-2 h-2 rounded-full inline-block app-bg-info"></span>
                         </div>
-                      </ng-container>
-                      <ng-container *ngIf="mail.flagged">
+                      }
+                      @if (mail.flagged) {
                         <div class="mb-2 app-color-warning">
                           <youpez-ibm-icon iconName="flagFilled" iconSize="16"></youpez-ibm-icon>
                         </div>
-                      </ng-container>
+                      }
                     </div>
                   </div>
                   <div class="app-list__item__content">
@@ -248,16 +248,16 @@
                       </div>
                       <div class="app-productive-heading-02 mb-1">
                         {{mail.title}}
-                        <ng-container *ngIf="mail.attachments">
+                        @if (mail.attachments) {
                           <youpez-ibm-icon iconName="attachment" iconSize="16"></youpez-ibm-icon>
-                        </ng-container>
+                        }
                       </div>
                       <div class="app-body-long-01">{{mail.content | slice:0:110}}...</div>
                     </div>
                   </div>
                 </div>
-              </ng-container>
-            </ng-container>
+              }
+            }
           </div>
         </div>
       </div>

@@ -40,41 +40,41 @@
                 <div class="mt-2">
                   <div class="app-list-header-pill">TAGS</div>
                   <div class="app-list-pill">
-                    <ng-container *ngFor="let tag of tags">
+                    @for (tag of tags; track tag) {
                       <div class="app-list-pill__item">
                         <div class="app-list-pill__item__inner"
-                             [ngClass]="{'app-list-pill__item__inner--active':tag.active}">
+                          [ngClass]="{'app-list-pill__item__inner--active':tag.active}">
                           <span class="h-3 w-3 rounded-full mr-2" [class]="tag.bg"></span>
                           {{tag.name}}
                         </div>
                       </div>
-                    </ng-container>
+                    }
                   </div>
                 </div>
                 <div class="mt-2">
                   <div class="app-list-header-pill">TEAM MEMBERS</div>
                   <div class="app-list-pill">
-                    <ng-container *ngFor="let user of users">
+                    @for (user of users; track user) {
                       <div class="app-list-pill__item">
                         <div class="app-list-pill__item__inner">
                           <img class="h-3 w-3 rounded-full mr-2" [src]="user.avatar"/>
                           {{user.name}}
                         </div>
                       </div>
-                    </ng-container>
+                    }
                   </div>
                 </div>
                 <div class="mt-2">
                   <div class="app-list-header-pill">ARCHIVES</div>
                   <div class="app-list-pill">
-                    <ng-container *ngFor="let archive of archives">
+                    @for (archive of archives; track archive) {
                       <div class="app-list-pill__item">
                         <div class="app-list-pill__item__inner">
                           <youpez-ibm-icon iconName="archive" iconSize="16" class="mr-2"></youpez-ibm-icon>
                           {{archive.name}}
                         </div>
                       </div>
-                    </ng-container>
+                    }
                   </div>
                 </div>
               </ng-scrollbar>
@@ -100,19 +100,19 @@
                       </button>
                       <div class="ml-2" style="width:150px">
                         <ibm-search (valueChange)="onSearchChange($event)"
-                                    (clear)="onSearchChange('')"
-                                    placeholder="Search..."
-                                    size="sm"></ibm-search>
+                          (clear)="onSearchChange('')"
+                          placeholder="Search..."
+                        size="sm"></ibm-search>
                       </div>
                       <div class="flex-1 flex justify-end">
                         <button (click)="onMinimize()"
-                                ibmButton="ghost" size="sm"
-                                class="bx--btn--icon-only bx--btn--remove-tooltip">
+                          ibmButton="ghost" size="sm"
+                          class="bx--btn--icon-only bx--btn--remove-tooltip">
                           <svg class="bx--btn__icon" ibmIconMinimize size="32"></svg>
                         </button>
                         <button (click)="onMaximize()"
-                                ibmButton="ghost" size="sm"
-                                class="bx--btn--icon-only bx--btn--remove-tooltip">
+                          ibmButton="ghost" size="sm"
+                          class="bx--btn--icon-only bx--btn--remove-tooltip">
                           <svg class="bx--btn__icon" ibmIconMaximize size="32"></svg>
                         </button>
                       </div>
@@ -121,9 +121,9 @@
                     <div fxLayout="row wrap">
                       <div fxFlex.gt-lg="65%">
                         <youpez-tasks-list #appTasksList
-                                        [tasks]="taskGroups"
-                                        [transparent]="false"
-                                        [filterText]="txtSearch"
+                          [tasks]="taskGroups"
+                          [transparent]="false"
+                          [filterText]="txtSearch"
                         ></youpez-tasks-list>
                       </div>
                     </div>

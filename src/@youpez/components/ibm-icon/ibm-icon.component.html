@@ -1,466 +1,356 @@
-<ng-container [ngSwitch]="iconName">
-  <ng-container *ngSwitchCase="'home'">
+
+@switch (iconName) {
+  @case ('home') {
     <svg ibmIconHome [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'application'">
+  }
+  @case ('application') {
     <svg ibmIconApplication [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'help'">
+  }
+  @case ('help') {
     <svg ibmIconHelp [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'add'">
+  }
+  @case ('add') {
     <svg ibmIconAdd [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'aperture'">
+  }
+  @case ('aperture') {
     <svg ibmIconAperture [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'search'">
+  }
+  @case ('search') {
     <svg ibmIconSearch [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'notification'">
+  }
+  @case ('notification') {
     <svg ibmIconNotification [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'chat'">
+  }
+  @case ('chat') {
     <svg ibmIconChat [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'user'">
+  }
+  @case ('user') {
     <svg ibmIconUser [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'tools'">
+  }
+  @case ('tools') {
     <svg ibmIconTools [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'arrowUp'">
+  }
+  @case ('arrowUp') {
     <svg ibmIconArrowUp [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'arrowDown'">
+  }
+  @case ('arrowDown') {
     <svg ibmIconArrowDown [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'arrowLeft'">
+  }
+  @case ('arrowLeft') {
     <svg ibmIconArrowLeft [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'arrowRight'">
+  }
+  @case ('arrowRight') {
     <svg ibmIconArrowRight [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'cloudDataOps'">
+  }
+  @case ('cloudDataOps') {
     <svg ibmIconCloudDataOps [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'virtualPrivateCloudAlt'">
+  }
+  @case ('virtualPrivateCloudAlt') {
     <svg ibmIconVirtualPrivateCloudAlt [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'checkMarkOutline'">
+  }
+  @case ('checkMarkOutline') {
     <svg ibmIconCheckmarkOutline [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'checkmark'">
+  }
+  @case ('checkmark') {
     <svg ibmIconCheckmark [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'checkmarkFilled'">
+  }
+  @case ('checkmarkFilled') {
     <svg ibmIconCheckmarkFilled [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'caretRight'">
+  }
+  @case ('caretRight') {
     <svg ibmIconCaretRight [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'caretLeft'">
+  }
+  @case ('caretLeft') {
     <svg ibmIconCaretLeft [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'renew'">
+  }
+  @case ('renew') {
     <svg ibmIconRenew [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'alarm'">
+  }
+  @case ('alarm') {
     <svg ibmIconAlarm [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'minimize'">
+  }
+  @case ('minimize') {
     <svg ibmIconMinimize [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'cloudDownload'">
+  }
+  @case ('cloudDownload') {
     <svg ibmIconCloudDownload [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'analytics'">
+  }
+  @case ('analytics') {
     <svg ibmIconAnalytics [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'activity'">
+  }
+  @case ('activity') {
     <svg ibmIconActivity [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'dashboard'">
+  }
+  @case ('dashboard') {
     <svg ibmIconDashboard [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'dashboardReference'">
+  }
+  @case ('dashboardReference') {
     <svg ibmIconDashboardReference [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'task'">
+  }
+  @case ('task') {
     <svg ibmIconTask [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'catalog'">
+  }
+  @case ('catalog') {
     <svg ibmIconCatalog [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'document'">
+  }
+  @case ('document') {
     <svg ibmIconDocument [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'email'">
+  }
+  @case ('email') {
     <svg ibmIconEmail [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'send'">
+  }
+  @case ('send') {
     <svg ibmIconSend [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'sendAlt'">
+  }
+  @case ('sendAlt') {
     <svg ibmIconSendAlt [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'userAdmin'">
+  }
+  @case ('userAdmin') {
     <svg ibmIconUserAdmin [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'userAvatar'">
+  }
+  @case ('userAvatar') {
     <svg ibmIconUserAvatar [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'folder'">
+  }
+  @case ('folder') {
     <svg ibmIconFolder [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'folderShared'">
+  }
+  @case ('folderShared') {
     <svg ibmIconFolderShared [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'recentlyViewed'">
+  }
+  @case ('recentlyViewed') {
     <svg ibmIconRecentlyViewed [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'image'">
+  }
+  @case ('image') {
     <svg ibmIconImage [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'imageSearch'">
+  }
+  @case ('imageSearch') {
     <svg ibmIconImageSearch [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'error'">
+  }
+  @case ('error') {
     <svg ibmIconError [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'phraseSentiment'">
+  }
+  @case ('phraseSentiment') {
     <svg ibmIconPhraseSentiment [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'tableSplit'">
+  }
+  @case ('tableSplit') {
     <svg ibmIconTableSplit [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'chartColumn'">
+  }
+  @case ('chartColumn') {
     <svg ibmIconChartColumn [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'magicWand'">
+  }
+  @case ('magicWand') {
     <svg ibmIconMagicWand [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'textTracking'">
+  }
+  @case ('textTracking') {
     <svg ibmIconTextTracking [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'textCreation'">
+  }
+  @case ('textCreation') {
     <svg ibmIconTextCreation [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'trashCan'">
+  }
+  @case ('trashCan') {
     <svg ibmIconTrashCan [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'menu'">
+  }
+  @case ('menu') {
     <svg ibmIconMenu [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'radioButton'">
+  }
+  @case ('radioButton') {
     <svg ibmIconRadioButton [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'radioButtonChecked'">
+  }
+  @case ('radioButtonChecked') {
     <svg ibmIconRadioButtonChecked [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'settingsAdjust'">
+  }
+  @case ('settingsAdjust') {
     <svg ibmIconSettingsAdjust [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'settings'">
+  }
+  @case ('settings') {
     <svg ibmIconSettings [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'edit'">
+  }
+  @case ('edit') {
     <svg ibmIconEdit [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'checkboxChecked'">
+  }
+  @case ('checkboxChecked') {
     <svg ibmIconCheckboxChecked [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'cloudApp'">
+  }
+  @case ('cloudApp') {
     <svg ibmIconCloudApp [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'bullhorn'">
+  }
+  @case ('bullhorn') {
     <svg ibmIconBullhorn [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'buildingInsights1'">
+  }
+  @case ('buildingInsights1') {
     <svg ibmIconBuildingInsights_1 [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'tag'">
+  }
+  @case ('tag') {
     <svg ibmIconTag [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'time'">
+  }
+  @case ('time') {
     <svg ibmIconTime [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'chevronDown'">
+  }
+  @case ('chevronDown') {
     <svg ibmIconChevronDown [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'chevronUp'">
+  }
+  @case ('chevronUp') {
     <svg ibmIconChevronUp [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'chevronLeft'">
+  }
+  @case ('chevronLeft') {
     <svg ibmIconChevronLeft [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'chevronRight'">
+  }
+  @case ('chevronRight') {
     <svg ibmIconChevronRight [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'draggable'">
+  }
+  @case ('draggable') {
     <svg ibmIconDraggable [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'archive'">
+  }
+  @case ('archive') {
     <svg ibmIconArchive [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'maximize'">
+  }
+  @case ('maximize') {
     <svg ibmIconMaximize [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'star'">
+  }
+  @case ('star') {
     <svg ibmIconStar [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'download'">
+  }
+  @case ('download') {
     <svg ibmIconDownload [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'share'">
+  }
+  @case ('share') {
     <svg ibmIconShare [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'move'">
+  }
+  @case ('move') {
     <svg ibmIconMove [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'tableOfContents'">
+  }
+  @case ('tableOfContents') {
     <svg ibmIconTableOfContents [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'upload'">
+  }
+  @case ('upload') {
     <svg ibmIconUpload [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'package'">
+  }
+  @case ('package') {
     <svg ibmIconPackage [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'attachment'">
+  }
+  @case ('attachment') {
     <svg ibmIconAttachment [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'flag'">
+  }
+  @case ('flag') {
     <svg ibmIconFlag [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'flagFilled'">
+  }
+  @case ('flagFilled') {
     <svg ibmIconFlagFilled [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'textBold'">
+  }
+  @case ('textBold') {
     <svg ibmIconTextBold [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'textItalic'">
+  }
+  @case ('textItalic') {
     <svg ibmIconTextItalic [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'textUnderline'">
+  }
+  @case ('textUnderline') {
     <svg ibmIconTextUnderline [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'printer'">
+  }
+  @case ('printer') {
     <svg ibmIconPrinter [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'overflowMenuHorizontal'">
+  }
+  @case ('overflowMenuHorizontal') {
     <svg ibmIconOverflowMenuHorizontal [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'overflowMenuVertical'">
+  }
+  @case ('overflowMenuVertical') {
     <svg ibmIconOverflowMenuVertical [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'openPanelFilledLeft'">
+  }
+  @case ('openPanelFilledLeft') {
     <svg ibmIconOpenPanelFilledLeft [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'openPanelLeft'">
+  }
+  @case ('openPanelLeft') {
     <svg ibmIconOpenPanelLeft [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'openPanelRight'">
+  }
+  @case ('openPanelRight') {
     <svg ibmIconOpenPanelRight [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'locked'">
+  }
+  @case ('locked') {
     <svg ibmIconLocked [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'information'">
+  }
+  @case ('information') {
     <svg ibmIconInformation [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'phone'">
+  }
+  @case ('phone') {
     <svg ibmIconPhone [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'subtract'">
+  }
+  @case ('subtract') {
     <svg ibmIconSubtract [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'money'">
+  }
+  @case ('money') {
     <svg ibmIconMoney [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'faceActivated'">
+  }
+  @case ('faceActivated') {
     <svg ibmIconFaceActivated [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'purchase'">
+  }
+  @case ('purchase') {
     <svg ibmIconPurchase [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'calendar'">
+  }
+  @case ('calendar') {
     <svg ibmIconCalendar [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'password'">
+  }
+  @case ('password') {
     <svg ibmIconPassword [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'location'">
+  }
+  @case ('location') {
     <svg ibmIconLocation [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'hourglass'">
+  }
+  @case ('hourglass') {
     <svg ibmIconHourglass [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'inProgress'">
+  }
+  @case ('inProgress') {
     <svg ibmIconInProgress [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'hearing'">
+  }
+  @case ('hearing') {
     <svg ibmIconHearing [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'favorite'">
+  }
+  @case ('favorite') {
     <svg ibmIconFavorite [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'pin'">
+  }
+  @case ('pin') {
     <svg ibmIconPin [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'industry'">
+  }
+  @case ('industry') {
     <svg ibmIconIndustry [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'portfolio'">
+  }
+  @case ('portfolio') {
     <svg ibmIconPortfolio [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'exit'">
+  }
+  @case ('exit') {
     <svg ibmIconExit [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'close'">
+  }
+  @case ('close') {
     <svg ibmIconClose [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'view'">
+  }
+  @case ('view') {
     <svg ibmIconView [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'apps'">
+  }
+  @case ('apps') {
     <svg ibmIconApps [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'contourFinding'">
+  }
+  @case ('contourFinding') {
     <svg ibmIconWatsonHealthContourFinding [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'save'">
+  }
+  @case ('save') {
     <svg ibmIconSave [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'3dCursorAlt'">
+  }
+  @case ('3dCursorAlt') {
     <svg ibmIconWatsonHealth_3DCursorAlt [size]="iconSize"></svg>
-  </ng-container>
-
-  <ng-container *ngSwitchCase="'hashtag'">
+  }
+  @case ('hashtag') {
     <!--<svg ibmIconHashtag [size]="iconSize"></svg>-->
     <svg xmlns="http://www.w3.org/2000/svg" [style.width]="iconSize" [style.height]="iconSize" viewBox="0 0 32 32">
       <defs>
         <style>
           .cls-1 {
-            fill: none;
-          }
-        </style>
-      </defs>
-      <path d="M28,12V10H22V4H20v6H12V4H10v6H4v2h6v8H4v2h6v6h2V22h8v6h2V22h6V20H22V12Zm-8,8H12V12h8Z"/>
-      <rect class="cls-1" [style.width]="iconSize" [style.height]="iconSize"/>
-    </svg>
-  </ng-container>
-
-  <ng-container *ngSwitchDefault>!!!</ng-container>
-</ng-container>
+          fill: none;
+        }
+      </style>
+    </defs>
+    <path d="M28,12V10H22V4H20v6H12V4H10v6H4v2h6v8H4v2h6v6h2V22h8v6h2V22h6V20H22V12Zm-8,8H12V12h8Z"/>
+    <rect class="cls-1" [style.width]="iconSize" [style.height]="iconSize"/>
+  </svg>
+}
+@default {
+  !!!
+}
+}

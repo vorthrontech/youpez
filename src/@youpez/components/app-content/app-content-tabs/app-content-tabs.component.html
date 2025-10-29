@@ -5,13 +5,13 @@
     </div>
     <div class="app-ibm-tabs-header sticky top-0 z-10">
       <ibm-tabs type="container" [isNavigation]="true" [followFocus]="true">
-        <ng-container *ngFor="let tab of tabs;let i = index">
+        @for (tab of tabs; track tab; let i = $index) {
           <ibm-tab [tabIndex]="i"
-                   [active]="!!tab.active"
-                   [heading]="tab.name"
-                   [disabled]="!!tab.disabled"
-                   (selected)="onClick(tab)"></ibm-tab>
-        </ng-container>
+            [active]="!!tab.active"
+            [heading]="tab.name"
+            [disabled]="!!tab.disabled"
+          (selected)="onClick(tab)"></ibm-tab>
+        }
       </ibm-tabs>
     </div>
     <div class="app-content app-content--default z-0">

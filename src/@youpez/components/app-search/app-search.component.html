@@ -13,7 +13,7 @@
           <div fxFlex="100%" fxFlex.gt-sm="40%" class="app-search__result__pane1">
             <div class="app-a-box app-bg-container app-scrollbar-fix">
               <ng-scrollbar>
-                <ng-container *ngIf="loading">
+                @if (loading) {
                   <div class="p-4">
                     <ibm-skeleton-text
                       [lines]="12"
@@ -21,8 +21,8 @@
                       [maxLineWidth]="220">
                     </ibm-skeleton-text>
                   </div>
-                </ng-container>
-                <ng-container *ngIf="!loading">
+                }
+                @if (!loading) {
                   <div class="app-list-header-title">TOP HITS</div>
                   <div class="app-list app-list--hover app-list--p app-list--select">
                     <div class="app-list__item">
@@ -80,12 +80,12 @@
                       </div>
                     </div>
                   </div>
-                </ng-container>
+                }
               </ng-scrollbar>
             </div>
           </div>
           <div fxFlex="100%" fxFlex.gt-sm="60%" class="app-search__result__pane2">
-            <ng-container *ngIf="loading">
+            @if (loading) {
               <div class="mb-2">
                 <ibm-skeleton-text
                   [lines]="2"
@@ -98,8 +98,8 @@
                 [minLineWidth]="60"
                 [maxLineWidth]="220">
               </ibm-skeleton-text>
-            </ng-container>
-            <ng-container *ngIf="!loading">
+            }
+            @if (!loading) {
               <div>
                 <div class="mb-2">
                   <div class="app-row app-row--center">
@@ -120,7 +120,7 @@
                   cluster.
                 </p>
               </div>
-            </ng-container>
+            }
             <div class="app-search__result__btn">
               <button (click)="onClose()" [skeleton]="loading" ibmButton="tertiary" size="sm">
                 Cancel

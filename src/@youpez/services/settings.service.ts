@@ -1,5 +1,5 @@
-import {Injectable, EventEmitter} from '@angular/core'
-import {DOCUMENT} from '@angular/common'
+import {Injectable, EventEmitter, DOCUMENT} from '@angular/core'
+
 import {Inject} from "@angular/core"
 import {BehaviorSubject} from 'rxjs'
 

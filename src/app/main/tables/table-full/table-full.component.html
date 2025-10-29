@@ -11,12 +11,12 @@
     <ibm-tag type="warm-gray">Pagination</ibm-tag>
   </div>
   <div fxFlex class="relative px-4 pb-4 pt-2">
-    <ng-container *ngIf="!loading">
+    @if (!loading) {
       <ag-grid-angular
         class="app-ag-grid app-border-all"
         [modules]="modules"
         [gridOptions]="gridOptions">
       </ag-grid-angular>
-    </ng-container>
+    }
   </div>
 </div>

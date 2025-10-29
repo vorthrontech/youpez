@@ -6,33 +6,33 @@
         <div class="app-body-short-01">List of your all invoices</div>
       </div>
       <div class="app-cards-vertical-merge">
-        <ng-container *ngFor="let invoice of transactions">
+        @for (invoice of transactions; track invoice) {
           <div class="app-card">
             <div class="app-card__content">
               <div fxLayout="row wrap" fxLayoutAlign=" center">
                 <div fxFlex.gt-md="180px" fxFlex="100%">
                   <div class="flex items-center">
-                    <ng-container *ngIf="invoice.payed">
+                    @if (invoice.payed) {
                       <youpez-ibm-icon iconName="document" iconSize="32"></youpez-ibm-icon>
-                    </ng-container>
-                    <ng-container *ngIf="!invoice.payed">
+                    }
+                    @if (!invoice.payed) {
                       <youpez-ibm-icon iconName="inProgress" iconSize="32"></youpez-ibm-icon>
-                    </ng-container>
+                    }
                     <div class="ml-4">
                       <div class="app-productive-heading-01 mb-1">#{{invoice.number}}</div>
                       <div class="app-label-01">
-                        <ng-container *ngIf="invoice.payed">
+                        @if (invoice.payed) {
                           <div class="pr-3 pl-2 py-1 app-bg-success-o-20 app-color-success rounded-full flex items-center">
                             <span class="w-2 h-2 app-bg-success rounded-full inline-block mr-2"></span>
                             Payed
                           </div>
-                        </ng-container>
-                        <ng-container *ngIf="!invoice.payed">
+                        }
+                        @if (!invoice.payed) {
                           <div class="pr-3 pl-2 py-1 app-bg-info-o-20 app-color-info rounded-full flex items-center">
                             <span class="w-2 h-2 app-bg-info rounded-full inline-block mr-2"></span>
                             waiting
                           </div>
-                        </ng-container>
+                        }
                       </div>
                     </div>
                   </div>
@@ -55,7 +55,7 @@
               </div>
             </div>
           </div>
-        </ng-container>
+        }
       </div>
     </div>
   </div>

@@ -17,16 +17,16 @@
     </div>
     <div fxFlex="100%" fxFlex.gt-md="100%">
       <div fxLayout="row wrap" class="mb-6 app-card-row">
-        <ng-container *ngFor="let chart of charts">
+        @for (chart of charts; track chart) {
           <div fxFlex="100%" fxFlex.gt-md="33.33%" class="">
             <div class="app-card p-2">
               <youpez-echarts-container>
                 <youpez-echarts [options]="chart" class="app-echarts-component"
-                             style="height: 400px;"></youpez-echarts>
+                style="height: 400px;"></youpez-echarts>
               </youpez-echarts-container>
             </div>
           </div>
-        </ng-container>
+        }
       </div>
     </div>
   </div>

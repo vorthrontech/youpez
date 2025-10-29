@@ -1,7 +1,7 @@
 <div class="app-a-box app-scrollbar-fix">
   <ng-scrollbar #scrollbar track="vertical">
     <div fxFill
-         fxLayout="row wrap">
+      fxLayout="row wrap">
       <div fxFlex="100%" fxFlex.gt-sm="45%" fxLayoutAlign="center start" class="relative app-bg-success text-white">
         <div class="absolute bottom-0 right-0 left-0 top-0 opacity-50 z-0 app-bg-pattern-svg"></div>
         <div class="z-10 relative px-8" ngClass.gt-sm="px-16">
@@ -14,7 +14,7 @@
             </div>
             <div style="max-width: 450px">
               <p class="app-body-long-02 mb-8">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <div class="px-4">
                 <ul ibmList class="bx--list--margin text-white">
                   <li ibmListItem>Sed ut perspiciatis unde omnis iste natus error</li>
@@ -45,7 +45,7 @@
           <h1 class="app-expressive-heading-06 pb-8">Start your free trial</h1>
           <div class="relative">
             <div id="form_1" class="app-expressive-heading-03 mb-4 app-form__header"
-                 [ngClass]="{'app-form__header--active':currentStep === 1}">1. Account
+              [ngClass]="{'app-form__header--active':currentStep === 1}">1. Account
               information
             </div>
             <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
@@ -177,27 +177,27 @@
                       <a class="app-link">terms & conditions</a>
                     </ibm-checkbox>
                   </div>
-                  <ng-container *ngIf="isValid('condition')">
+                  @if (isValid('condition')) {
                     <div class="app-helper-text-01 app-color-danger">This field is required</div>
-                  </ng-container>
+                  }
                 </div>
                 <div class="app-form__submit flex justify-end">
                   <button type="submit" ibmButton="primary" size="field" [skeleton]="step1Loading"
-                          [disabled]="currentStep !== 1">
+                    [disabled]="currentStep !== 1">
                     Next
                     <svg class="bx--btn__icon" ibmIconArrowRight size="20"></svg>
                   </button>
                 </div>
               </div>
             </form>
-            <ng-container *ngIf="step1Valid">
+            @if (step1Valid) {
               <div class="absolute top-0 right-0 bottom-0 left-0 app-bg-success opacity-25 -mx-4 -my-4"></div>
-            </ng-container>
+            }
           </div>
 
           <div class="relative">
             <div id="form_2" class="app-expressive-heading-03 mt-8 mb-6 app-form__header"
-                 [ngClass]="{'app-form__header--active':currentStep === 2}">2.
+              [ngClass]="{'app-form__header--active':currentStep === 2}">2.
               Additional information
             </div>
             <div [ngClass]="{'hidden':!step1Valid}">
@@ -304,7 +304,7 @@
                   </div>
                   <div class="app-form__submit flex justify-end">
                     <button type="submit" ibmButton="primary" size="field" [skeleton]="step2Loading"
-                            [disabled]="currentStep !== 2">
+                      [disabled]="currentStep !== 2">
                       Next
                       <svg class="bx--btn__icon" ibmIconArrowRight size="20"></svg>
                     </button>
@@ -312,9 +312,9 @@
                 </div>
               </form>
             </div>
-            <ng-container *ngIf="step2Valid">
+            @if (step2Valid) {
               <div class="absolute top-0 right-0 bottom-0 left-0 app-bg-success opacity-25 -mx-4 -my-4"></div>
-            </ng-container>
+            }
           </div>
           <div id="form_3" class="app-expressive-heading-03 mt-8 mb-6 app-form__header" [ngClass]="{'app-form__header--active':currentStep === 3}">
             3. Verify your data
@@ -353,7 +353,7 @@
               </div>
             </form>
           </div>
-          <ng-container *ngIf="currentStep !== 3">
+          @if (currentStep !== 3) {
             <div class="flex justify-between">
               <div></div>
               <button type="submit" ibmButton="primary" size="field" [disabled]="true">
@@ -361,7 +361,7 @@
                 <svg class="bx--btn__icon" ibmIconArrowRight size="20"></svg>
               </button>
             </div>
-          </ng-container>
+          }
         </div>
       </div>
     </div>

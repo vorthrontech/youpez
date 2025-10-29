@@ -14,22 +14,22 @@
         <div class="app-productive-heading-06 mb-8">
           Frequently Asked Questions
         </div>
-        <ng-container *ngFor="let group of faq">
+        @for (group of faq; track group) {
           <div class="mb-6">
             <div class="app-productive-heading-03 mb-2">{{group.groupName}}</div>
             <div class="app-card app-card--m-0">
               <div class="app-card__content__fill p-0">
                 <ibm-accordion>
-                  <ng-container *ngFor="let question of group.children">
+                  @for (question of group.children; track question) {
                     <ibm-accordion-item [title]="question.title">
                       <div class="app-body-short-01">{{question.content}}</div>
                     </ibm-accordion-item>
-                  </ng-container>
+                  }
                 </ibm-accordion>
               </div>
             </div>
           </div>
-        </ng-container>
+        }
       </div>
     </div>
   </ng-scrollbar>

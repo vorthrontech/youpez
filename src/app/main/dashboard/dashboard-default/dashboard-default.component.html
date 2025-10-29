@@ -106,7 +106,7 @@
               </div>
               <youpez-echarts-container>
                 <youpez-echarts [options]="chartOptions3" class="app-echarts-component"
-                             style="height: 100px;"></youpez-echarts>
+                style="height: 100px;"></youpez-echarts>
               </youpez-echarts-container>
             </div>
           </div>
@@ -121,7 +121,7 @@
               </div>
               <youpez-echarts-container>
                 <youpez-echarts [options]="chartOptions" class="app-echarts-component"
-                             style="height: 100px;"></youpez-echarts>
+                style="height: 100px;"></youpez-echarts>
               </youpez-echarts-container>
             </div>
           </div>
@@ -136,7 +136,7 @@
               </div>
               <youpez-echarts-container>
                 <youpez-echarts [options]="chartOptions4" class="app-echarts-component"
-                             style="height: 100px;"></youpez-echarts>
+                style="height: 100px;"></youpez-echarts>
               </youpez-echarts-container>
             </div>
           </div>
@@ -151,7 +151,7 @@
               </div>
               <youpez-echarts-container>
                 <youpez-echarts [options]="chartOptions2" class="app-echarts-component"
-                             style="height: 100px;"></youpez-echarts>
+                style="height: 100px;"></youpez-echarts>
               </youpez-echarts-container>
             </div>
           </div>
@@ -198,15 +198,15 @@
                 </div>
               </div>
               <div class="app-list app-list--hover app-list--select">
-                <ng-container *ngFor="let sub of subscriptions">
+                @for (sub of subscriptions; track sub) {
                   <div class="app-list__item" [ngClass]="{'app-color-success':sub.up,'app-color-danger':!sub.up}">
                     <div class="app-list__item__prefix w-10 text-center">
-                      <ng-container *ngIf="sub.up">
+                      @if (sub.up) {
                         <youpez-ibm-icon iconName="arrowUp" iconSize="16"></youpez-ibm-icon>
-                      </ng-container>
-                      <ng-container *ngIf="!sub.up">
+                      }
+                      @if (!sub.up) {
                         <youpez-ibm-icon iconName="arrowDown" iconSize="16"></youpez-ibm-icon>
-                      </ng-container>
+                      }
                     </div>
                     <div class="app-list__item__content">
                       {{sub.month}}
@@ -216,7 +216,7 @@
                       <svg class="bx--btn__icon" ibmIconArrowRight size="32"></svg>
                     </button>
                   </div>
-                </ng-container>
+                }
               </div>
             </div>
           </div>
@@ -299,7 +299,7 @@
               </div>
               <div style="height:270px;" class="relative">
                 <app-dummy-table-rich size="sh" stickyHeader="true"
-                                      class="app-ibm-h-full app-ibm-table-header-fix"></app-dummy-table-rich>
+                class="app-ibm-h-full app-ibm-table-header-fix"></app-dummy-table-rich>
               </div>
             </div>
           </div>
@@ -484,7 +484,7 @@
                   <div>
                     <youpez-echarts-container>
                       <youpez-echarts [options]="realtimeOpts" class="app-echarts-component"
-                                   style="height: 130px;"></youpez-echarts>
+                      style="height: 130px;"></youpez-echarts>
                     </youpez-echarts-container>
                   </div>
                 </div>
@@ -508,7 +508,7 @@
                   <div>
                     <youpez-echarts-container>
                       <youpez-echarts [options]="realtimeOpts" class="app-echarts-component"
-                                   style="height: 130px;"></youpez-echarts>
+                      style="height: 130px;"></youpez-echarts>
                     </youpez-echarts-container>
                   </div>
                 </div>
@@ -525,7 +525,7 @@
           <div>
             <youpez-echarts-container>
               <youpez-echarts [options]="themeRiverOpts" class="app-echarts-component"
-                           style="height: 240px;"></youpez-echarts>
+              style="height: 240px;"></youpez-echarts>
             </youpez-echarts-container>
           </div>
         </div>

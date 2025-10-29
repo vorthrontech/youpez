@@ -247,7 +247,7 @@
                       </div>
                       <div class="ml-3" style="width:170px">
                         <ibm-search placeholder="Search..."
-                                    size="sm"></ibm-search>
+                        size="sm"></ibm-search>
                       </div>
                       <div class="flex-1 flex justify-end">
                         <button
@@ -266,11 +266,11 @@
                 </div>
                 <div class="app-subtitle app-subtitle--cards mt-4">Recent</div>
                 <div fxLayout="row wrap" class="app-card-row-holder">
-                  <ng-container *ngFor="let file of files">
+                  @for (file of files; track file) {
                     <div fxFlex="100%" fxFlex.gt-md="16.66%">
                       <div class="app-card app-card--select"
-                           (click)="onSelectItem(file)"
-                           [ngClass]="{'app-card--select--active':selectedItem.name === file.name}">
+                        (click)="onSelectItem(file)"
+                        [ngClass]="{'app-card--select--active':selectedItem.name === file.name}">
                         <div class="app-card__content__alt">
                           <div class="">
                             <div class="px-10 py-10 text-center app-bg-decorative mb-2">
@@ -285,12 +285,12 @@
                         </div>
                       </div>
                     </div>
-                  </ng-container>
+                  }
                 </div>
                 <div class="mx-4 py-1 mb-4 app-border-b"></div>
                 <div class="app-subtitle app-subtitle--cards">Folders</div>
                 <div fxLayout="row wrap" class="app-card-row-holder">
-                  <ng-container *ngFor="let folder of folders">
+                  @for (folder of folders; track folder) {
                     <div fxFlex="100%" fxFlex.gt-md="20%">
                       <div class="app-card app-card--select">
                         <div class="app-card__content__alt">
@@ -309,11 +309,11 @@
                         </div>
                       </div>
                     </div>
-                  </ng-container>
+                  }
                 </div>
                 <div class="app-subtitle app-subtitle--cards mt-2">Files</div>
                 <div fxLayout="row wrap" class="app-card-row-holder">
-                  <ng-container *ngFor="let file of filesMore">
+                  @for (file of filesMore; track file) {
                     <div fxFlex="100%" fxFlex.gt-md="16.66%">
                       <div class="app-card app-card--select">
                         <div class="app-card__content__alt">
@@ -330,7 +330,7 @@
                         </div>
                       </div>
                     </div>
-                  </ng-container>
+                  }
                 </div>
               </div>
             </div>

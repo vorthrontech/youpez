@@ -10,7 +10,7 @@
               <div class="app-timeline">
                 <div class="app-timeline__group" fxLayout="row wrap">
                   <div class="app-timeline__time text-right" fxFlex="100%" fxFlex.gt-sm="105px"
-                       ngClass.lt-sm="app-timeline__time--collapse">
+                    ngClass.lt-sm="app-timeline__time--collapse">
                     <div class="app-helper-text-01">October 13</div>
                     <div class="app-helper-text-01">2020</div>
                   </div>
@@ -39,7 +39,7 @@
 
                 <div class="app-timeline__group" fxLayout="row wrap">
                   <div class="app-timeline__time text-right" fxFlex="100%" fxFlex.gt-sm="105px"
-                       ngClass.lt-sm="app-timeline__time--collapse">
+                    ngClass.lt-sm="app-timeline__time--collapse">
                     <div class="app-helper-text-01">September 15</div>
                     <div class="app-helper-text-01">2020</div>
                   </div>
@@ -66,7 +66,7 @@
 
                 <div class="app-timeline__group" fxLayout="row wrap">
                   <div class="app-timeline__time text-right" fxFlex="100%" fxFlex.gt-sm="105px"
-                       ngClass.lt-sm="app-timeline__time--collapse">
+                    ngClass.lt-sm="app-timeline__time--collapse">
                     <div class="app-helper-text-01">June 22–26</div>
                     <div class="app-helper-text-01">2020</div>
                   </div>
@@ -96,7 +96,7 @@
 
                 <div class="app-timeline__group" fxLayout="row wrap">
                   <div class="app-timeline__time text-right" fxFlex="100%" fxFlex.gt-sm="105px"
-                       ngClass.lt-sm="app-timeline__time--collapse">
+                    ngClass.lt-sm="app-timeline__time--collapse">
                     <div class="app-helper-text-01">2020</div>
                   </div>
                   <div fxFlex class="app-timeline__item app-timeline__item--circle app-timeline__item--level2 pb-5">
@@ -108,7 +108,7 @@
 
                 <div class="app-timeline__group" fxLayout="row wrap">
                   <div class="app-timeline__time text-right" fxFlex="100%" fxFlex.gt-sm="105px"
-                       ngClass.lt-sm="app-timeline__time--collapse">
+                    ngClass.lt-sm="app-timeline__time--collapse">
                     <div class="app-helper-text-01">December 2</div>
                     <div class="app-helper-text-01">2019</div>
                   </div>
@@ -130,7 +130,7 @@
 
                 <div class="app-timeline__group" fxLayout="row wrap">
                   <div class="app-timeline__time text-right" fxFlex="100%" fxFlex.gt-sm="105px"
-                       ngClass.lt-sm="app-timeline__time--collapse">
+                    ngClass.lt-sm="app-timeline__time--collapse">
                     <div class="app-helper-text-01">September 10</div>
                     <div class="app-helper-text-01">2019</div>
                   </div>
@@ -169,36 +169,35 @@
               <div class="app-timeline px-5 py-5">
                 <div class="flex justify-end">
                   <div class="app-timeline" style="max-width:800px">
-                    <ng-container *ngFor="let event of events">
+                    @for (event of events; track event) {
                       <div class="app-timeline__group" fxLayout="row wrap">
                         <div class="app-timeline__time " fxFlex="100%" fxFlex.gt-sm="75px"
-                             ngClass.lt-sm="app-timeline__time--collapse">
+                          ngClass.lt-sm="app-timeline__time--collapse">
                           <span class="app-helper-text-01">{{event.time}}</span>
                         </div>
                         <div fxFlex class="app-timeline__item app-timeline__item--circle pb-5"
-                             [class]="getClassForEvent(event)">
+                          [class]="getClassForEvent(event)">
                           <div class="app-timeline__item__content">
                             <div class="app-productive-heading-02 mb-1 leading-4">{{event.title}}</div>
-                            <ng-container *ngIf="event.content">
+                            @if (event.content) {
                               <div class="app-body-short-01">{{event.content}}</div>
-                            </ng-container>
-
+                            }
                           </div>
-                          <ng-container *ngIf="event.children.length">
+                          @if (event.children.length) {
                             <div class="app-timeline">
-                              <ng-container *ngFor="let event of event.children">
+                              @for (event of event.children; track event) {
                                 <div class="app-timeline__item app-timeline__item--circle app-timeline__item--level2"
-                                     [class]="getClassForEvent(event)">
+                                  [class]="getClassForEvent(event)">
                                   <div class="app-timeline__item__content">
                                     <div class="app-label-01 leading-4">{{event.content}}</div>
                                   </div>
                                 </div>
-                              </ng-container>
+                              }
                             </div>
-                          </ng-container>
+                          }
                         </div>
                       </div>
-                    </ng-container>
+                    }
                   </div>
                 </div>
               </div>
